@@ -57,6 +57,7 @@ public class matrizD {
     
     //Ingreso de datos por el usuario 
     public void ingresoDatos(File n){
+        long startMatriz = System.currentTimeMillis();
         LeerFile obj = new LeerFile();
         List a =  obj.TenerFile(n);
         
@@ -88,7 +89,8 @@ public class matrizD {
             
             llenarMatriz(primero,segundo,tercero);
         }
-        
+        long endMatriz = System.currentTimeMillis();
+        System.out.println("Matriz Creada en: "+(endMatriz-startMatriz)+" ms");
             
     }
 }
