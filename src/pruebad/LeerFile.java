@@ -56,7 +56,6 @@ public class LeerFile {
         }catch(Exception e){
             e.printStackTrace();
         }
-        System.out.println(cellData);
         return cellData;
     }
    
