@@ -52,7 +52,6 @@ public class algoDijkstra {
     //Algoritmo completo, basado en el camino más corto desde un vértice hacia otro
     void dijkstra(int graph[][], int src) 
     { 
-        long startDijkstra = System.currentTimeMillis();
         int dist[] = new int[numVertices];//Lista que guarda la distancia acumulada menor hasta ese indice
         
       
@@ -99,8 +98,6 @@ public class algoDijkstra {
         
   
         // Imprimimos la tabla de enrutamiento
-        long endDijkstra = System.currentTimeMillis();
-        System.out.println("Algoritmo Dijkstra procesado en: "+ (endDijkstra-startDijkstra) +" ms");
         printSolution(dist, numVertices,src); 
     }
 }
